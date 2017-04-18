@@ -1,0 +1,13 @@
+2017/04/18 11:17:15 [error] 3838#0: *551866828 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'UnexpectedValueException' with message 'The stream or file "/usr/share/nginx/www/SmartWiki/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied' in /usr/share/nginx/www/SmartWiki/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+Stack trace:
+#0 /usr/share/nginx/www/SmartWiki/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Monolog\Handler\StreamHandler->write(Array)
+#1 /usr/share/nginx/www/SmartWiki/vendor/monolog/monolog/src/Monolog/Logger.php(337): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /usr/share/nginx/www/SmartWiki/vendor/monolog/monolog/src/Monolog/Logger.php(616): Monolog\Logger->addRecord(400, Object(UnexpectedValueException), Array)
+#3 /usr/share/nginx/www/SmartWiki/vendor/laravel/framework/src/Illuminate/Log/Writer.php(202): Monolog\Logger->error(Object(UnexpectedValueException), Array)
+#4 /usr/share/nginx/www/SmartWiki/vendor/laravel/framework/src...
+PHP message: PHP Fatal error:  Uncaught exception 'UnexpectedValueException' with message 'The stream or file "/usr/share/nginx/www/SmartWiki/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied' in /usr/share/nginx/www/SmartWiki/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+Stack trace:
+#0 /usr/share/nginx/www/SmartWiki/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Monolog\Handler\StreamHandler->write(Array)
+#1 /usr/share/nginx/www/SmartWiki/vendor/monolog/monolog/src/Monolog/Logger.php(337): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /usr/share/nginx/www/SmartWiki/vendor/monolog/monolog/src/Monolog/Logger.php(616): Monolog\Logger->addRecord(400, Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#3 /usr/share/nginx/www/SmartWiki/vendor/laravel/framework/src/Illuminate/Log/Writer.php(202): Monolog\Logger->error(Objec
